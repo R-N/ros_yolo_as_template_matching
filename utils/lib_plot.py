@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 
 def convert(img):
     '''change image color from "BGR" to "RGB" for plt.plot()'''
-    if isinstance(img.flat[0], np.float):
+    if isinstance(img.flat[0], float):
         img = (img*255).astype(np.uint8)
     if len(img.shape) == 3 and img.shape[2] == 3:
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)

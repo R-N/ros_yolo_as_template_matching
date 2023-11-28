@@ -278,10 +278,10 @@ class Darknet(nn.Module):
 
         # Open the weights file
         with open(weights_path, "rb") as f:
-            header = np.fromfile(f, dtype=np.int32, count=5)  # First five are header values
+            header = np.fromfile(f, dtype=int, count=5)  # First five are header values
             self.header_info = header  # Needed to write header when saving weights
             self.seen = header[3]  # number of images seen during training
-            weights = np.fromfile(f, dtype=np.float32)  # The rest are weights
+            weights = np.fromfile(f, dtype=float)  # The rest are weights
 
         # Establish cutoff for loading backbone weights
         cutoff = None
