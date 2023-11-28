@@ -122,5 +122,5 @@ if __name__ == "__main__":
             cv2.imwrite(filename, img_disp)
 
     print("Result images are saved to: " + OUTPUT_FOLDER)
-    cv2.destroyAllWindows()
+    #cv2.destroyAllWindows()
         
