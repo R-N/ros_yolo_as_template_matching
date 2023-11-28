@@ -1,7 +1,7 @@
 numpy
 matplotlib
-tensorflow==1.13.1
-tensorboard==1.13.0
+tensorflow
+tensorboard
 terminaltables
 pillow
 tqdm
