@@ -75,7 +75,7 @@ if __name__ == "__main__":
         img_disp = np.hstack(img_disps)
 
     # Plot.
-    lib_plot.cv2_imshow(img_disp, time_ms=0)
+    lib_plot.show([img_disp])
 
     # Save result.
     OUTPUT_FOLDER = args.output_folder

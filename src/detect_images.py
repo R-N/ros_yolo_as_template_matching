@@ -112,8 +112,9 @@ if __name__ == "__main__":
 
             # Plot
             img_disp = detector.draw_bboxes(img, detections)
-            cv2.imshow("image", img_disp)
-            cv2.waitKey(10)
+            lib_plot.show([img_disp])
+            #cv2.imshow("image", img_disp)
+            #cv2.waitKey(10)
 
             # Save
             filename = "{}/{}".format((OUTPUT_FOLDER),
